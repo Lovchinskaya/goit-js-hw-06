@@ -12,3 +12,4 @@ const inputValue = function (event) {
 };
 
 textInput.addEventListener('input', inputValue);
+
