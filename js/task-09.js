@@ -4,7 +4,7 @@ function getRandomHexColor() {
 
 const btnColorChange = document.querySelector('.change-color');
 const bgrColor = document.querySelector('body');
-const TextColorRef = document.querySelector('.color');
+const textColorRef = document.querySelector('.color');
 
 btnColorChange.addEventListener('click', changeBgdColor);
 
@@ -13,7 +13,7 @@ function changeBgdColor() {
     .toString(16)
     .padStart(6, 0)
     .toLowerCase();
-  TextColorRef.textContent = newColor;
+  textColorRef.textContent = newColor;
   bgrColor.style.background = newColor;
   console.dir(newColor);
 }
